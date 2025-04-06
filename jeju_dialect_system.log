@@ -55,3 +55,396 @@
 2025-04-06 16:15:10,361 - JejuDialectSystem - INFO - 자체 검증 수행 완료
 2025-04-06 16:15:11,499 - JejuDialectSystem - INFO - 답변 개선 완료
 2025-04-06 16:15:11,499 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:02:28,542 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:02:28,542 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:02:28,542 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:02:28,542 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:02:28,542 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:02:30,043 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:02:30,044 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:02:36,133 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:02:39,217 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:02:39,907 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:02:39,907 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:02:39,914 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:02:39,914 - JejuDialectSystem - ERROR - Voyage 모델 로드 실패: No module named 'anthropic'
+2025-04-06 17:02:39,915 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:02:39,915 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:02:40,518 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:02:40,518 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:02:40,518 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:02:40,518 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:02:40,519 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:02:40,519 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:02:40,519 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:02:40,670 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:02:40,670 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:02:41,138 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:02:41,138 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:02:41,284 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:02:41,285 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:02:41,285 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:02:41,285 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:02:41,285 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:02:50,439 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:02:50,439 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:02:50,439 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:02:50,439 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:02:50,439 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:02:51,923 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:02:51,923 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:02:57,001 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:02:58,675 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:02:59,985 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:02:59,986 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:02:59,996 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:02:59,997 - JejuDialectSystem - ERROR - Voyage 모델 로드 실패: No module named 'anthropic'
+2025-04-06 17:02:59,998 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:02:59,998 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:03:01,058 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:03:01,058 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:03:01,114 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:03:01,114 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:03:01,114 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:03:01,114 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:03:01,115 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:03:01,115 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:03:01,115 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:03:01,251 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:03:01,252 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:03:01,252 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:03:01,252 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:03:01,252 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:03:01,252 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:03:01,252 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:03:01,393 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:03:01,393 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:03:01,393 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:03:01,393 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:03:01,393 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:08:05,362 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:08:05,362 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:08:05,362 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:08:05,362 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:08:05,362 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:08:06,138 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:08:06,138 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:08:11,995 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:08:13,690 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:08:14,084 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:08:14,084 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:08:14,090 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:08:14,249 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: skt/ko-gpt-trinity-1.2B-v0.5
+2025-04-06 17:08:14,250 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:08:14,250 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:08:14,790 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:08:14,791 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:08:14,791 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:08:15,121 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:08:15,122 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:08:15,122 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:08:15,122 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:08:15,122 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:08:15,270 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:08:15,270 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:08:15,270 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:08:15,482 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:08:15,483 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:08:15,484 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:08:15,484 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:08:15,484 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:08:15,973 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:08:15,973 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:08:15,973 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:08:16,187 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:08:16,188 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:08:16,189 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:08:16,189 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:08:16,189 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:08:16,287 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:08:16,288 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:08:16,288 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:08:16,500 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:08:16,501 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:08:16,501 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:09:36,217 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:09:36,217 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:09:36,217 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:09:36,217 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:09:36,217 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:09:37,880 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:09:37,881 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:09:43,585 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:09:45,276 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:09:45,944 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:09:45,944 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:09:45,950 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:09:45,950 - JejuDialectSystem - WARNING - ANTHROPIC_API_KEY 환경 변수가 설정되지 않았습니다.
+2025-04-06 17:09:45,951 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:09:45,951 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:09:46,609 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:09:46,609 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:09:46,710 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:09:46,710 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:09:46,710 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:09:46,710 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:09:46,710 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:09:46,711 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:09:46,711 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:09:46,904 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:09:46,904 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:09:46,905 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:09:46,905 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:09:46,905 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:09:46,905 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:09:46,905 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:09:47,046 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:09:47,046 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:09:47,046 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:09:47,046 - JejuDialectSystem - WARNING - Voyage 모델이 준비되지 않았습니다.
+2025-04-06 17:09:47,047 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:11:22,070 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:11:22,071 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:11:22,071 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:11:22,071 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:11:22,071 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:11:23,064 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:11:23,065 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:11:29,682 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:11:31,455 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:11:32,135 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:11:32,135 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:11:32,141 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:11:32,290 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: skt/ko-gpt-trinity-1.2B-v0.5
+2025-04-06 17:11:32,291 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:11:32,291 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:11:33,330 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:11:33,330 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:11:33,330 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:11:33,635 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:11:33,636 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:11:33,636 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:11:33,636 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:11:33,636 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:11:33,698 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:11:33,698 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:11:33,698 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:11:33,911 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:11:33,912 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:11:33,912 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:11:33,913 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:11:33,913 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:11:34,075 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:11:34,075 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:11:34,076 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:11:34,278 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:11:34,279 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:11:34,280 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:11:34,280 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:11:34,280 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:11:34,366 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:11:34,366 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:11:34,366 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:11:34,584 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:11:34,585 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: skt/ko-gpt-trinity-1.2B-v0.5'}}
+2025-04-06 17:11:34,585 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:13:28,305 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:13:28,305 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:13:28,305 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:13:28,305 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:13:28,305 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:13:28,994 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:13:28,994 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:13:35,653 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:13:37,299 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:13:37,669 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:13:37,670 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:13:37,675 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:13:37,822 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: skt/ko-gpt-trinity-1.2B-v0.5
+2025-04-06 17:13:37,822 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:13:37,822 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:13:38,587 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Missing required arguments; Expected either ('max_tokens', 'messages' and 'model') or ('max_tokens', 'messages', 'model' and 'stream') arguments to be given
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:13:38,587 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:13:38,747 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Missing required arguments; Expected either ('max_tokens', 'messages' and 'model') or ('max_tokens', 'messages', 'model' and 'stream') arguments to be given
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:13:38,747 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:13:38,989 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:13:38,989 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:13:38,989 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:13:38,990 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Missing required arguments; Expected either ('max_tokens', 'messages' and 'model') or ('max_tokens', 'messages', 'model' and 'stream') arguments to be given
+2025-04-06 17:13:38,990 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:13:38,990 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:13:38,990 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:13:39,143 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:13:39,144 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:13:39,144 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:13:39,144 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Missing required arguments; Expected either ('max_tokens', 'messages' and 'model') or ('max_tokens', 'messages', 'model' and 'stream') arguments to be given
+2025-04-06 17:13:39,144 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:17:26,273 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:17:26,273 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:17:26,273 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:17:26,273 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:17:26,273 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:17:27,160 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:17:27,160 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:17:34,095 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:17:35,880 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:17:36,700 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:17:36,700 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:17:36,709 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:17:36,865 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: skt/ko-gpt-trinity-1.2B-v0.5
+2025-04-06 17:17:36,865 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:17:36,865 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:17:37,416 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:17:37,416 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:17:37,416 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:17:37,760 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:17:37,761 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-04-06 17:17:37,761 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:17:37,761 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:17:37,761 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:17:38,030 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:17:38,031 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:17:38,031 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:17:38,256 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:17:38,257 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-04-06 17:17:38,257 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:17:38,258 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:17:38,258 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:17:38,790 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:17:38,791 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:17:38,791 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:17:39,028 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:17:39,029 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-04-06 17:17:39,030 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:17:39,030 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:17:39,030 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:17:39,201 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:17:39,202 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:17:39,202 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:17:39,415 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-04-06 17:17:39,417 - JejuDialectSystem - ERROR - Voyage CoT 추론 실패: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-sonnet-20240229'}}
+2025-04-06 17:17:39,417 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:19:56,751 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:19:56,751 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:19:56,751 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:19:56,751 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:19:56,751 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:19:57,850 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:19:57,850 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:20:04,428 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:20:04,428 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:20:04,428 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:20:04,428 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:20:04,428 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:20:06,080 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:20:06,080 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:20:11,807 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:20:13,581 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:20:14,397 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:20:14,397 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:20:14,406 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:20:14,689 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: skt/ko-gpt-trinity-1.2B-v0.5
+2025-04-06 17:20:14,690 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:20:14,690 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:20:15,891 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:20:15,891 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:20:15,891 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:20:31,578 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:20:31,586 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 98 토큰 생성
+2025-04-06 17:20:31,587 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:20:31,587 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:20:31,587 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:20:31,733 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:20:31,733 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:20:31,733 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:20:49,613 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:20:49,616 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 93 토큰 생성
+2025-04-06 17:20:49,616 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:20:49,616 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:20:49,617 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:20:50,074 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:20:50,074 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:20:50,074 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:21:02,303 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:21:02,306 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 68 토큰 생성
+2025-04-06 17:21:02,306 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:21:02,307 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:21:02,307 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:21:02,466 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:21:02,467 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:21:02,467 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:21:30,937 - JejuDialectSystem - INFO - 데이터 로드 성공: DZHF20002075.json
+2025-04-06 17:21:30,937 - JejuDialectSystem - INFO - 발화 수: 214
+2025-04-06 17:21:30,937 - JejuDialectSystem - INFO - 화자 수: 3
+2025-04-06 17:21:30,937 - JejuDialectSystem - INFO - 방언 매핑 수: 350
+2025-04-06 17:21:30,937 - JejuDialectSystem - INFO - 방언 사전 크기: 250
+2025-04-06 17:21:32,068 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2025-04-06 17:21:32,068 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:21:38,556 - JejuDialectSystem - INFO - 임베딩 모델 로드 성공: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2025-04-06 17:21:41,331 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-04-06 17:21:42,080 - JejuDialectSystem - INFO - 크로스 인코더 로드 성공
+2025-04-06 17:21:42,080 - JejuDialectSystem - INFO - 기존 Contextual RAG 시스템 로드 시도: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:21:42,090 - JejuDialectSystem - INFO - Contextual RAG 시스템 로드 성공: jeju_dialect_contextual_rag.pkl
+2025-04-06 17:21:42,373 - JejuDialectSystem - INFO - Voyage 모델 로드 성공: anthropic/voyage
+2025-04-06 17:21:42,374 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:21:42,374 - JejuDialectSystem - INFO - 쿼리 분해 완료: 6개 하위 쿼리 생성
+2025-04-06 17:21:43,672 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:21:43,673 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:21:43,673 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:21:58,259 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:21:58,270 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 79 토큰 생성
+2025-04-06 17:21:58,270 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:21:58,270 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: question
+2025-04-06 17:21:58,270 - JejuDialectSystem - INFO - 쿼리 분해 완료: 8개 하위 쿼리 생성
+2025-04-06 17:21:58,496 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 8개 결과
+2025-04-06 17:21:58,496 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:21:58,496 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 8개 결과
+2025-04-06 17:22:19,960 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:22:19,963 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 135 토큰 생성
+2025-04-06 17:22:19,963 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:22:19,963 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: translation
+2025-04-06 17:22:19,963 - JejuDialectSystem - INFO - 쿼리 분해 완료: 20개 하위 쿼리 생성
+2025-04-06 17:22:20,522 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:22:20,522 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:22:20,522 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:22:30,349 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:22:30,352 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 55 토큰 생성
+2025-04-06 17:22:30,352 - JejuDialectSystem - INFO - CoT 추론 완료
+2025-04-06 17:22:30,352 - JejuDialectSystem - INFO - 쿼리 의도 분석 완료: analysis
+2025-04-06 17:22:30,353 - JejuDialectSystem - INFO - 쿼리 분해 완료: 12개 하위 쿼리 생성
+2025-04-06 17:22:30,555 - JejuDialectSystem - INFO - 관련성 평가 및 재순위화 완료: 10개 결과
+2025-04-06 17:22:30,556 - JejuDialectSystem - INFO - 인사이트 추출 완료
+2025-04-06 17:22:30,556 - JejuDialectSystem - INFO - Contextual RAG 검색 완료: 10개 결과
+2025-04-06 17:22:47,505 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-06 17:22:47,507 - JejuDialectSystem - INFO - Voyage CoT 추론 수행 완료: 103 토큰 생성
+2025-04-06 17:22:47,507 - JejuDialectSystem - INFO - CoT 추론 완료
