@@ -373,7 +373,7 @@ class JejuDialectCoT:
         # Anthropic API 호출
         try:
             response = self.anthropic_client.messages.create(
-                model="claude-3-opus-20240229",
+                model="anthropic/voyage",
                 max_tokens=4096,
                 messages=[{
                     "role": "user",
@@ -409,7 +409,7 @@ class JejuDialectCoT:
         # 검증 수행
         try:
             verification_response = self.anthropic_client.messages.create(
-                model="claude-3-opus-20240229",
+                model="anthropic/voyage",
                 max_tokens=4096,
                 messages=[
                     {"role": "user", "content": verification_prompt}
@@ -438,7 +438,7 @@ class JejuDialectCoT:
                 
                 # 개선된 답변 생성
                 correction_response = self.anthropic_client.messages.create(
-                    model="claude-3-opus-20240229",
+                    model="anthropic/voyage",
                     max_tokens=4096,
                     messages=[
                         {"role": "user", "content": correction_prompt}
