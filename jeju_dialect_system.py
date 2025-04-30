@@ -178,27 +178,25 @@ class JejuDialectCoT:
     제주어 방언 Chain-of-Thought(CoT) 추론 시스템
     HDLCoRe 논문의 HDL-aware CoT 개념을 제주어 도메인에 적용
     """
-    def __init__(self, processor, llm_model_name="skt/ko-gpt-trinity-1.2B-v0.5"):
+    def __init__(self, processor, llm_model_name="anthropic/voyage"):
         self.processor = processor
         self.model_name = llm_model_name
-        self.tokenizer = None
-        self.model = None
-        self.pipeline = None
         
-        # 모델 및 토크나이저 초기화
+        # Anthropic API 키 설정
+        self.api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not self.api_key:
+            logger.warning("ANTHROPIC_API_KEY 환경 변수가 설정되지 않았습니다.")
+            self.anthropic_client = None
+            return
+            
         try:
-            self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-            self.model = AutoModelForCausalLM.from_pretrained(llm_model_name)
-            self.pipeline = pipeline(
-                "text-generation",
-                model=self.model,
-                tokenizer=self.tokenizer,
-                max_length=512
-            )
-            logger.info(f"LLM 모델 로드 성공: {llm_model_name}")
+            from anthropic import Anthropic
+            self.anthropic_client = Anthropic(api_key=self.api_key)
+            logger.info(f"Voyage 모델 로드 성공: {llm_model_name}")
         except Exception as e:
-            logger.error(f"LLM 모델 로드 실패: {e}")
-    
+            logger.error(f"Voyage 모델 로드 실패: {e}")
+            self.anthropic_client = None
+
     def _classify_query(self, query):
         """
         쿼리를 분류합니다. (HDLCoRe 논문의 작업 유형 및 복잡성 분류 개념 적용)
@@ -364,39 +362,31 @@ class JejuDialectCoT:
     def cot_reasoning(self, query, retrieval_response=None):
         """
         Chain-of-Thought 추론을 수행합니다.
-        
-        Args:
-            query (str): 사용자 쿼리
-            retrieval_response (dict/str): Contextual Retrieval 응답 또는 문자열
-        
-        Returns:
-            str: 생성된 답변
         """
-        if not self.pipeline:
-            logger.warning("LLM 모델이 준비되지 않았습니다.")
+        if not self.anthropic_client:
+            logger.warning("Voyage 모델이 준비되지 않았습니다.")
             return "모델이 준비되지 않아 추론을 수행할 수 없습니다."
         
-        # retrieval_response가 문자열인 경우 처리
-        if isinstance(retrieval_response, str):
-            retrieval_response = {"results": [{"form": retrieval_response}], "insights": {}}
-        
-        # CoT 프롬프트 생성
+        # 프롬프트 생성
         prompt = self.generate_cot_prompt(query, retrieval_response)
         
-        # 추론 수행
+        # Anthropic API 호출
         try:
-            response = self.pipeline(prompt, max_length=len(prompt.split()) + 300, do_sample=True, temperature=0.7)[0]['generated_text']
-            answer = response[len(prompt):].strip()
+            response = self.anthropic_client.messages.create(
+                model="anthropic/voyage",
+                max_tokens=4096,
+                messages=[{
+                    "role": "user",
+                    "content": prompt
+                }]
+            )
+            answer = response.content[0].text
             
-            logger.info(f"CoT 추론 수행 완료: {len(answer)} 토큰 생성")
-            
-            # 자체 검증 수행
-            verified_answer = self.self_verification(query, answer)
-            
-            return verified_answer
+            logger.info(f"Voyage CoT 추론 수행 완료: {len(answer.split())} 토큰 생성")
+            return answer
         except Exception as e:
-            logger.error(f"CoT 추론 실패: {e}")
-            return "추론 과정에서 오류가 발생했습니다."
+            logger.error(f"Voyage CoT 추론 실패: {e}")
+            return f"추론 과정에서 오류가 발생했습니다: {str(e)}"
     
     def self_verification(self, query, answer):
         """
@@ -409,8 +399,8 @@ class JejuDialectCoT:
         Returns:
             str: 검증 및 개선된 답변
         """
-        if not self.pipeline:
-            logger.warning("LLM 모델이 준비되지 않아 자체 검증을 수행할 수 없습니다.")
+        if not self.anthropic_client:
+            logger.warning("Voyage 모델이 준비되지 않아 자체 검증을 수행할 수 없습니다.")
             return answer
         
         # 검증 프롬프트 생성
@@ -418,14 +408,15 @@ class JejuDialectCoT:
         
         # 검증 수행
         try:
-            verification_response = self.pipeline(
-                verification_prompt, 
-                max_length=len(verification_prompt.split()) + 200,
-                do_sample=True,
-                temperature=0.3
-            )[0]['generated_text']
+            verification_response = self.anthropic_client.messages.create(
+                model="anthropic/voyage",
+                max_tokens=4096,
+                messages=[
+                    {"role": "user", "content": verification_prompt}
+                ]
+            )
             
-            verification_result = verification_response[len(verification_prompt):].strip()
+            verification_result = verification_response.content[0].text
             
             logger.info("자체 검증 수행 완료")
             
@@ -446,14 +437,15 @@ class JejuDialectCoT:
 """
                 
                 # 개선된 답변 생성
-                correction_response = self.pipeline(
-                    correction_prompt, 
-                    max_length=len(correction_prompt.split()) + 300,
-                    do_sample=True,
-                    temperature=0.5
-                )[0]['generated_text']
+                correction_response = self.anthropic_client.messages.create(
+                    model="anthropic/voyage",
+                    max_tokens=4096,
+                    messages=[
+                        {"role": "user", "content": correction_prompt}
+                    ]
+                )
                 
-                improved_answer = correction_response[len(correction_prompt):].strip()
+                improved_answer = correction_response.content[0].text
                 
                 logger.info("답변 개선 완료")
                 
@@ -474,7 +466,7 @@ class JejuDialectHybridSystem:
         self.cot_system = None
     
     def initialize_systems(self, embedding_model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", 
-                          llm_model_name="skt/ko-gpt-trinity-1.2B-v0.5",
+                          llm_model_name="anthropic/voyage",
                           use_contextual_rag=True):
         """
         RAG 및 CoT 시스템을 초기화합니다.
@@ -1213,7 +1205,7 @@ def main():
     # RAG 및 CoT 시스템 초기화
     system.initialize_systems(
         embedding_model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-        llm_model_name="skt/ko-gpt-trinity-1.2B-v0.5",
+        llm_model_name="anthropic/voyage",
         use_contextual_rag=True
     )
     
